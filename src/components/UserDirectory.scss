@@ -1,0 +1,49 @@
+.directory-wrapper {
+  background-color: #fff;
+  padding: 50px 0;
+  .directory-container {
+    max-width: 80%;
+    margin: 0 auto;
+    @media only screen and (max-width: 600px) {
+      max-width: 95%;
+    }
+    h1 {
+      margin: 0 0 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+    }
+    .post-card {
+      display: block;
+      background-color: #f5f5fa;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #e2e5f1;
+      margin-bottom: 16px;
+      text-decoration: none;
+      .user-info {
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 480px) {
+          flex-direction: column;
+          gap: 10px;
+        }
+        p {
+          font-size: 18px;
+          color: #191919;
+          @media only screen and (max-width: 768px) {
+            font-size: 16px;
+          }
+          @media only screen and (max-width: 480px) {
+            margin: 0;
+          }
+          span {
+            font-weight: 500;
+            display: inline-block;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+}
